@@ -1,0 +1,739 @@
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*Defaults*/
+
+h1 {
+    font-family: "aktiv-grotesk-std-n9", "aktiv-grotesk-std", Helvetica, sans-serif;/*The first text specifier is for ie8 bug per help.typekit.com/customer/portal/articles/6855 */
+    font-style: normal;
+    font-weight: 900;
+}
+
+h2 {
+	font-family: "aktiv-grotesk-std-n3", "aktiv-grotesk-std", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: "aktiv-grotesk-std-n7", "aktiv-grotesk-std", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+a:link {
+  text-decoration: none;
+  color:inherit;
+}
+
+a:visited {
+   text-decoration: none;
+   color:inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  text-decoration: none;
+  color: #d96901;
+}
+
+header {
+  background-color: #1c85b0;
+  color: #fff;
+  line-height: 0;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+
+/*Navigation*/
+
+
+nav {
+  font-size: 20px;
+  line-height: 1.42;
+  font-family: "aktiv-grotesk-std-n4","aktiv-grotesk-std", "aktiv grotesk", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  vertical-align: bottom;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+a.current {
+	font-family: "aktiv-grotesk-std-n7","aktiv-grotesk-std", "aktiv grotesk", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+a.logo {
+  font-size: 55px;
+  line-height: 1.42;
+  font-family: "aktiv-grotesk-std-3", "aktiv-grotesk-std", "aktiv grotesk", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+#trk-logo-y{
+	letter-spacing: -5px;
+}
+
+.logoblink{
+	color: #99ccde;
+	font-size: 120%;
+	vertical-align: -3%;
+	-webkit-animation: 2s blink step-end 10;
+	-moz-animation: 2s blink step-end 10;
+	-ms-animation: 2s blink step-end 10;
+	-o-animation: 2s blink step-end 10;
+	animation: 2s blink step-end 10;
+}
+
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #99ccde;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #99ccde;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #99ccde;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #99ccde;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #99ccde;
+  }
+}
+
+a.nav {
+
+}
+
+
+nav ul li {
+	display: block;
+	list-style: none;
+	padding: 5px 0px;
+	margin: 10px 0px;
+	text-align: center;
+}
+
+/* Larger than iphone */
+@media (min-width: 480px) {
+
+	nav ul {
+	padding-left: 41px;
+	}
+
+	nav ul li {
+	padding-top: 22px;
+	list-style: none;
+	float: left;
+	padding-bottom: 0px;
+	margin: 0px 10px 0px 10px;
+	}
+
+
+}
+
+/* Larger than Phablet */
+@media (min-width: 550px) {
+
+	a:hover {
+		text-decoration: none;
+		color: #d96901;
+	}
+	
+	nav {
+		font-size: 13px;
+		line-height: 1.42;
+		font-family: "aktiv-grotesk-std-n4","aktiv-grotesk-std", "aktiv grotesk", Helvetica, sans-serif;
+		font-style: normal;
+  		font-weight: 400;
+		vertical-align: bottom;
+		text-align: left;
+		margin-bottom: 25px;
+		padding-top: 25px;
+	}	
+
+	a.logo {
+	  	font-size: 35px;
+  		line-height: 1.42;
+  		font-family: "aktiv-grotesk-std-3", "aktiv-grotesk-std", "aktiv grotesk", Helvetica, sans-serif;
+  		font-style: normal;
+  		font-weight: 300;
+	}
+
+	#trk-logo-y{
+	letter-spacing: -3px;
+	}
+
+	nav ul {
+	float: right;
+	}
+	
+	nav ul li {
+	padding-top: 22px;
+	list-style: none;
+	float: left;
+	padding-bottom: 0px;
+	margin: 0px 10px 0px 10px;
+	}
+
+}
+
+/*Article-AboveFold*/
+
+/* 
+.marketing {
+	padding: 0px 30px;
+}
+ */
+
+#mainheadline {
+  font-size: 34px;
+  line-height: 1.1;
+}
+
+.subhead {
+  font-size: 23px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+}
+
+.painless {
+  font-size: 19px;
+  font-family: "aktiv-grotesk-std-i4", "aktiv-grotesk-std", "aktiv grotesk", Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  }
+  
+.browser {
+	line-height:0;
+	margin-top: 20px;
+	padding-bottom: 7px;
+}
+
+
+.dropshadow {
+	line-height: 0;
+	margin-top: -11px;
+	padding-top: 3px;
+	opacity: .9;
+}
+
+/** Media Queries **************************************/
+
+@media (min-width: 480px) {
+	
+	.dropshadow {
+	margin-top: -13px;
+	}
+}
+
+
+@media (min-width: 550px) {
+
+	.marketing {
+	padding: inherit;
+	}
+	
+	.u-max-full-width.browser{
+	max-width: 187%;
+	}
+	
+	.browser {
+	margin-top: 0px;
+	margin-left: 10px;
+	padding-bottom: 0px;
+	}
+	
+	.dropshadow {
+	margin-top: 10px;
+	}
+}
+
+
+@media (min-width: 640px) {
+	
+	.dropshadow {
+	margin-top: 20px;
+	}
+	
+	.u-max-full-width.browser{
+	max-width: 150%;
+	}
+	
+}
+
+
+@media (min-width: 935px) {
+	
+	.dropshadow {
+	margin-top: 20px;
+	}
+	
+	.u-max-full-width.browser{
+	max-width: 100%;
+	}
+	
+}
+
+
+@media (min-width: 1024px) {
+	
+	.dropshadow {
+	margin-top: -8px;
+	}
+}
+
+
+@media (min-width: 1280px) {
+	
+	.dropshadow {
+	margin-top: -9px;
+	padding-top: 1px;
+	}
+}
+
+/** End Media Queries **************************************/
+
+
+/*CTA Button*/
+
+.CTA-button-text {
+	font-size: 20px;
+	line-height: 19px;
+	color: #fff;
+	font-family: "aktiv-grotesk-std-n9", "aktiv-grotesk-std", "aktiv grotesk", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+}
+
+
+.button{
+	border-radius: 7px;
+	background-color: #d96901;
+	border-color: #fff;
+	border: 0px;
+	text-align: center;
+	padding: 15px;
+	display: inline-table;
+}
+
+a:hover.button {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+.cta-butn{
+	}
+
+.butCTAstrip {
+	background-color: #1c85b0;
+}
+
+/*Testimonials*/
+
+.testimonials ul li {
+	display: inline-block;
+	list-style: none;
+/* 
+	padding: 5px 0px;
+	margin: 10px 0px;
+ */
+	text-align: left;
+}
+
+.testimonials {
+	padding: 50px 0px 60px;
+	margin-bottom: 20px;
+}
+
+.test-headline {
+	font-size: 25px;
+	line-height: 1.4;
+	color: #d96901;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.test-img {
+	float: none;
+	margin: 20px 0px 20px 25%;
+}
+
+.test-text {
+	margin: 0px;
+	font-size: 22px;
+	line-height: 1.27;
+	letter-spacing: 1px;
+	color: #000;
+	font-family: "aktiv-grotesk-std-i3", "aktiv-grotesk-std", "aktiv grotesk", Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: 300;
+}
+
+.test-name-location {
+	margin: 0px;
+	font-size: 19px;
+	line-height: 1.26;
+	color: #0c85b0;
+	font-family: "aktiv-grotesk-std-n7", "aktiv-grotesk-std", "aktiv grotesk", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+/** Media Queries **************************************/
+
+@media (min-width: 640px) {
+
+	.test-img {
+	float: left;
+	margin: 20px 25px 20px 0px;
+	}
+	
+	.test-headline{
+	text-align: left;
+	}
+}
+
+/** End Media Queries **************************************/
+
+/*Features*/
+
+
+.features {
+	background: url("../images/features-background.jpg");
+	background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	padding-top: 48.5%; 
+}
+
+.features_Text_Background {
+  background-color: #f8ecda;
+  opacity: 0.902;
+  padding: 42px 30px 33px; 
+}
+
+.features-headline {
+	font-size: 22px;
+	line-height: 1.27;
+	color: #d96901;
+	text-align: center;
+}
+
+.features-body {
+	font-size: 14px;
+	line-height: 1.42;
+}
+
+/** Media Queries **************************************/
+
+@media (min-width: 550px) {
+
+	div h3.features-headline {
+	height: 54px;
+	}
+}
+
+
+@media (min-width: 750px) {
+	
+	.features {
+		background: url("../images/features-background.jpg");
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-color: #fff;
+		padding-top: 30%;
+	}
+
+}
+
+/** End Media Queries **************************************/
+
+/*FAQ*/ 
+ 
+.faq {
+	background: url("../images/20140808_StartupStockPhotos_101.jpg");
+	background-repeat: repeat-y;
+	background-size: auto;
+	background-color: #1c85b0;
+	color: #fff;
+	padding: 55px 30px 45px;
+
+}
+	
+.faq-headline {
+	font-size: 25px;
+	line-height: 1.1;
+}
+
+.faq-question {
+	font-size: 14px;
+	line-height: 1.29;
+	font-family: "aktiv-grotesk-std", "aktiv grotesk medium", "aktiv grotesk", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	margin: 0px;
+	padding: 0px;
+}
+
+.faq-answer {
+	font-size: 14px;
+	line-height: 1.43;
+	font-family: "aktiv-grotesk-std-n4", "aktiv-grotesk-std", "aktiv grotesk medium", "aktiv grotesk", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	padding-top: 5px;
+}
+
+.faq-col-two {
+	padding-top: 0px;
+}
+
+
+
+/** Media Queries **************************************/
+
+@media (min-width: 550px) {
+
+	.faq-col-two {
+	padding-top: 46px;
+	}
+	
+	#but-faq {
+	font-size: 17px;
+	padding: 11px;
+	}
+
+}
+
+@media (min-width: 615px) {
+
+	#but-faq {
+	font-size: 17px;
+	padding: 15px;
+	}
+
+}
+
+
+@media (min-width: 750px) {
+	.faq {
+		background: url("../images/20140808_StartupStockPhotos_101.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: #1c85b0;
+		color: #fff;
+		padding: 55px 30px 45px;
+		}
+}
+
+/** End Media Queries **************************************/
+
+/*Pricing*/
+
+.pricing {
+	color: #1c85b0;
+	padding: 0px 30px 0px;
+}
+
+
+.pricing-colpad{
+	padding: 0px 10px;
+}
+
+.topmargin{
+	margin-top: 50px;
+	
+}
+
+.botmargin{
+	margin-bottom: 40px;
+}
+
+.pricing-headline {
+	font-size: 25px;
+	line-height: 1.1;
+	text-align: center;
+}
+
+.price-image {
+	text-align: center;
+}
+
+.price {
+	font-size: 19px;
+	line-height: 1.26;
+	font-family: "aktiv-grotesk-std-n7", "aktiv-grotesk-std", "aktiv grotesk medium", "aktiv grotesk", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	text-align: center;
+	margin: 15px 0px 5px;
+}
+
+.pricing-body{
+	font-size: 14px;
+	line-height: 1.43;
+	text-align: left;
+}
+
+.price-strong {
+	font-family: "aktiv-grotesk-std-n7", "aktiv-grotesk-std", "aktiv grotesk medium", "aktiv grotesk", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.price-em {
+	font-family: "aktiv-grotesk-std-n4", "aktiv-grotesk-std", "aktiv grotesk medium", "aktiv grotesk", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+
+/*CTAstrip*/
+
+.CTAstrip {
+	background-image: url("../images/Call-to-Action_BG.png");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #d96901;
+	color: #fff;
+}
+
+.CTAstrip-headline {
+	font-size: 25px;
+	line-height: 1.1;
+	margin-bottom: 0px;
+}
+
+.CTAstrip-padding{
+		padding-top: 20px;
+}
+
+.CTAstrip-subhead {
+	font-size: 14px;
+	line-height: 1.29;
+	font-family: "aktiv-grotesk-std-n4", "aktiv-grotesk-std", "aktiv grotesk medium", "aktiv grotesk", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+
+}
+
+.CTArow-margin{
+	margin: 5px 0px;
+}
+
+.CTAinput{
+	margin: 15px 0px 25px;
+}
+
+/** Media Queries **************************************/
+
+@media (min-width: 550px) {
+
+	.offset-by-two.columns {
+	margin-left: 0px;
+		}
+	
+	.three.columns.CTAinput{
+	margin: 0px 0px 25px;
+	}
+	
+	#CTAstripbut{
+	margin: 0px 0px 0px 25px;
+	}
+}
+
+/** End Media Queries **************************************/
+
+
+/*Footer*/
+
+footer {
+  background-color: #1c85b0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  font-family: "aktiv-grotesk-std-n3", "aktiv-grotesk-std", "aktiv grotesk medium", "aktiv grotesk", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  padding: 14px 10px 14px 10px;
+}
+
+.footer-nav {
+	text-align: left;
+	padding-right: 20px;
+}
+
+footer ul li {
+	display: block;
+	list-style: none;
+	margin:5px 0px;
+	text-align: center;
+}
+
+.footer-legal {
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+/* 	padding-right: 20px; */
+}
+
+/* Larger than tablet */
+@media (min-width: 550px) {
+
+	footer ul li {
+		list-style: none;
+		float:left;
+		margin:0px 5px;
+}
+
+
+	.footer-legal {
+		text-align: right;
+	}
+}
